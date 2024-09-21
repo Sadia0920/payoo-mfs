@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center mt-5">
+        <div class="artboard phone-5 bg-[#F4F5F7] rounded-2xl">
+          <div class="hero mt-20 ">
+            <!-- Available Balance Section -->
+            <div class="stats flex items-center">
+                <div class="stat">
+                  <div id="balance" class="text-2xl font-bold text-[#080808E6]">89400</div>
+                  <div class="text-[#7e7e7e] font-medium stat-title">Available Balance</div>
+                </div>
+                <div>
+                  <button id="btn-logout" class="btn btn-outline mr-3 px-16">LogOut</button>
+                </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <h2 class="text-[#080808] font-bold text-xl ml-3">🔥Welcome to Payooo!</h2>
+            <p class="text-[#7e7e7e] font-medium text-lg mx-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+          </div>
+          <div class="divider"></div>
+          <!-- use action button -->
+          <div class="ml-5">
+          <button id="button-add-money" class="btn btn-outline ml-7 px-10">Add Money</button>
+          <button id="button-cash-out" class="btn btn-outline ml-6 px-10">Cash Out</button>
+          <br>
+          <br>
+          <button class="btn btn-outline ml-7 px-10">Transactions</button>
+          </div>
+          <div class="divider"></div>
+          <!-- add money form -->
+          <div id="add-money-section" >
+            <h2 class="text-xl font-bold ml-4">Add Money</h2>
+          <div class="hero mt-4 ">
+            <div class="hero-content flex-col">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                    <span class="label-text font-medium">Amount to Add</span>
+                    </label>
+                    <input type="text" placeholder="Add Amount to withdraw" id="add-money-input"  class="input rounded-full bg-[#F4F5F7]"  required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                    <span class="label-text font-medium">Pin Number</span>
+                    </label>
+                    <input type="password" autocomplete="off" placeholder="Enter 4 digit pin number" id="add-pin-input" class="input rounded-full bg-[#F4F5F7]" required />
+                          
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary rounded-full bg-[#0874F2] border-none">Add Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- Cash Out form -->
+          <div id="cash-out-section" class="hidden">
+            <h2 class="text-xl font-bold ml-4">Cash Out</h2>
+          <div class="hero mt-4 ">
+            <div class="hero-content flex-col">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                    <span class="label-text font-medium">Amount to Cash Out</span>
+                    </label>
+                    <input type="text" placeholder="Add Amount to withdraw" id="cash-out-input"  class="input rounded-full bg-[#F4F5F7]"  required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                    <span class="label-text font-medium">Pin Number</span>
+                    </label>
+                    <input type="password" autocomplete="off" placeholder="Enter 4 digit pin number" id="cash-out-pin-input" class="input rounded-full bg-[#F4F5F7]" required />
+                          
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-cashout-money" class="btn btn-primary rounded-full bg-[#0874F2] border-none">Cash Out</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <script src="js/utilities.js"></script> 
+        <script src="js/home.js"></script>
+        <script src="js/toggle.js"></script>
+       
+      </main>
+</body>
+</html>
