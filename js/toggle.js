@@ -27,5 +27,5 @@ document.getElementById('button-transactions').addEventListener('click',function
 
 document.getElementById('btn-logout').addEventListener('click',function(event){
     event.preventDefault();
-    window.location.href='/index.html'; 
+    window.location.href='./index.html'; 
 })
